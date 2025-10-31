@@ -1,98 +1,108 @@
-# Frontend Mentor - Profile Card Component
+# Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [Profile Card Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ).
-Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7).
+
+# Frontend Mentor - Testimonials grid section
+
+This project is inspired by Frontend Mentor challenges.
+It demonstrates a responsive CSS Grid layout for user cards using only HTML and CSS, without JavaScript.
 
 ---
 
 ## 🧠 About The Project
 
-A simple and responsive profile card built using only HTML and CSS.
-This project focuses on layout, positioning, and visual hierarchy using Flexbox and modern CSS properties.
+The layout showcases multiple user testimonials arranged within a responsive grid container.
+Each card contains user details such as name, title, and testimonial.
+The goal is to practice CSS Grid, responsive design, and color contrast handling.
 
 ---
 
 ## 💻 Built With
 
 - HTML5 semantic structure
-- CSS3 (Flexbox, position, box-shadow, and custom properties)
-- Responsive design with media queries
+- CSS3 (Grid layout and positioning)
+- Custom CSS variables for colors and spacing
+- Media Queries for mobile responsiveness
 
 ---
 
-## 📱 Mobile Design Settings (max-width: 375px)
+## 📱 Responsive Design
+
+### Desktop (Default)
+
+```css
+.container {
+  width: 100%;
+  display: grid;
+  margin: 20px;
+  padding: 20px 30px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto auto;
+  column-gap: 25px;
+  row-gap: 25px;
+  place-content: center;
+}
+```
+
+### Mobile (≤ 375px)
 
 ```css
 @media (max-width: 375px) {
-  body {
-    margin: 0;
-    padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+    padding: 14px;
+    gap: 16px;
+  }
 
-    background-position: left -140px top -160px, right -140px bottom -170px;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  .card {
-    width: 90%;
-    text-align: center;
-    border-radius: 10px;
-    margin: 1.5rem auto;
-  }
-  .top-card img {
-    top: 50%;
-    left: 0;
-    transform: translate(100%, 70%);
-  }
-  .bottom-card .name {
-    font-size: 18px;
-  }
-  .bottom-card .age {
-    margin-left: 8px;
-    font-size: 17px;
-  }
-  .bottom-card .location {
-    font-size: 16px;
-    margin: 3px;
-    margin-bottom: 30px;
-  }
-  dd {
-    margin: 0;
-    font-size: 16px;
-  }
-  dt {
-    font-size: 10px;
+  .user-card-1,
+  .user-card-2,
+  .user-card-3,
+  .user-card-4,
+  .user-card-5 {
+    width: 100%;
+    max-width: 320px;
+    height: auto;
+    position: static;
+    transform: none;
+    grid-column: 1;
+    grid-row: auto;
   }
 }
 ```
 
 ---
 
+## 🚀 How To Use
+
+1. Clone or download this repository.
+2. Open the index.html file in your browser.
+3. Modify style.css to customize colors or layout if needed.
+
+---
+
+## 🎯 Key Learnings
+
+- Using CSS Grid to build flexible multi-column layouts.
+- Creating mobile-friendly designs using media queries.
+- Managing consistent spacing and colors with CSS variables.
+- Practicing clean, modular CSS code organization.
+
+---
+
 ## 🚀 Live Demo
 
-[[live demo link ](https://tourmaline-lokum-6e4541.netlify.app/)]
+[[live demo link ]()]
 
----
-
-## 🧩 How To Run
-
-1. Clone this repository
-   ```bash
-   git clone https://github.com/SaharQ1986/Frontend-Mentor---Profile-Card-Component.git
-   ```
-2. Open `index.html` in your browser.
-
----
-
-## 🧑💻 Author
+## 🧑‍💻 Author
 
 - Frontend Mentor – [@SaharQ1986](https://www.frontendmentor.io/profile/SaharQ1986)
-- GitHub – [@SaharQ1986](https://github.com/SaharQ1986)
+- GitHub – [@SaharQ1986](https://github.com/SaharQ1986/Frontend-Mentor---Testimonials-grid-section.git)
 
 ---
 
 ## 🪶 Acknowledgments
 
-Design and assets provided by [Frontend Mentor](https://www.frontendmentor.io/).
+Design concept inspired by [Frontend Mentor](https://www.frontendmentor.io/).
