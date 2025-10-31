@@ -94,7 +94,7 @@ The goal is to practice CSS Grid, responsive design, and color contrast handling
 
 ## 🚀 Live Demo
 
-[[live demo link ]()]
+[[live demo link ](https://gentle-kulfi-773417.netlify.app/)]
 
 ## 🧑‍💻 Author
 
